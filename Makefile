@@ -2,9 +2,9 @@
 ####################### Makefile Template ##############################
 ########################################################################
 # Student settings
-NAME = YOURNAME
-SID = YOURSID
-EMAIL = YOURUTAEMAIL
+NAME = TRENTON LAULE
+SID = 1001669855
+EMAIL = TRENTON>LAULE@MAVS.UTA.EDU
 SEMESTER = SPRING2025
 PROJECT=PROJ03
  
