@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import NavBar from '../../components/NavBar';
+import React from 'react';
+import { mushrooms } from '@/data/development';
 
 export default function MushroomPage() {
   return (

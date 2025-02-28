@@ -10,6 +10,85 @@ const warningMessage = {
     message: "This is a toxic species, proceed with caution."
 };
 
+function getPillColor(pillSelected) {
+    if (pillSelected === false) {
+        return '#D9D9D9'; // Grey color for unselected
+    }
+    else if (pillSelected === true) {
+        return '#579076'; // Green color for selected
+    }
+    else {
+        return '#FF0000'; // Red color for error
+    }
+}
+
+const pills = [
+    { 
+        text: "Favorite",
+        pillFilterType: 'tags',
+        pillSelected: true,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    { 
+        text: "Recent",
+        pillFilterType: 'tags',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    { 
+        text: "Texas",
+        pillFilterType: 'Region',
+        pillSelected: true,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    {
+        text: "North America",
+        pillFilterType: 'Region',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    {
+        text: "Europe",
+        pillFilterType: 'Region',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    {
+        text: "Asia",
+        pillFilterType: 'Region',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    {
+        text: "Africa",
+        pillFilterType: 'Region',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    {
+        text: "South America",
+        pillFilterType: 'Region',
+        pillSelected: false,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    }
+];
+
 const mushrooms = {
     mushrooms: [
         {  
