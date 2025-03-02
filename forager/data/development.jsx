@@ -128,4 +128,4 @@ const mushrooms = {
 // export default dummyData; // Requires import dummyData from './data/development.js';
 
 // More than one export.
-export {warningMessage, dummyData, mushrooms}; // Requires import {warningMessage, dummyData} from './data/development.js';
+export {warningMessage, dummyData, mushrooms, pills}; // Requires import {warningMessage, dummyData} from './data/development.js';
