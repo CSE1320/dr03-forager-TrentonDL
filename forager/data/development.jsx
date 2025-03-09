@@ -4,12 +4,6 @@ const dummyData = {
     status: "success",
 };
 
-const warningMessage = {
-    header: "warning",
-    icon: "/icons/icon_warning.svg",
-    message: "This is a toxic species, proceed with caution."
-};
-
 function getPillColor(pillSelected) {
     if (pillSelected === false) {
         return '#D9D9D9'; // Grey color for unselected
@@ -89,40 +83,27 @@ const pills = [
     }
 ];
 
-const mushrooms = {
-    mushrooms: [
-        {  
-            name: "Death Cap",
-            favorite: false,
-            toxic: true,
-            picture: "../public/img/death_cap.png",
-        },
-        {
-            name: "Paddy Straw",
-            favorite: false,
-            toxic: false,
-            picture: "../public/img/paddy_straw.png",
-        },
-        {
-            name: "Destroying Angel",
-            favorite: false,
-            toxic: true,
-            picture: "../public/img/destroying_angel.png",
-        },
-        {
-            name: "False Death Cap",
-            favorite: false,
-            toxic: true,
-            picture: "../public/img/false_death_cap.png",
-        },
-        {
-            name: "Puffball",
-            favorite: true,
-            toxic: false,
-            picture: "../public/img/turkey_tail.png",
-        },
-    ]
-}
+const warningMessage = {
+    header: "warning",
+    icon: "../public/icons/warning_icon.png",
+    message: "This is a toxic species, proceed with caution."
+};
+
+const createMushroom = (name, image, alt, warning) => ({
+    name,
+    image: `../public/img/${image}.png`,
+    alt, 
+    warning
+});
+
+const mushrooms = [
+    createMushroom("Death Cap", "death_cap", "Death cap mushroom growing in a patch of leaves", true),
+    createMushroom("Paddy Straw", "paddy_straw", "Two Paddy Straw mushrooms laying in the dirt", false),
+    createMushroom("Destroying Angel", "destroying_angel", "Destroying Angel mushroom growing in a patch of leaves", true),
+    createMushroom("False Death Cap", "false_death_cap", "False Death cap mushroom growing in a patch of leaves", true),
+    createMushroom("Puffball", "puffball", "Three puffball mushrooms grouped together",false),
+];
+
 
 // Two flavors of exporting:
 // export default dummyData; // Requires import dummyData from './data/development.js';

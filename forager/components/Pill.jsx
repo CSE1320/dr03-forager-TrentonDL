@@ -15,12 +15,12 @@ const Pill = ({ text, bgColor }) => {
 
     const [filterSelected, setfilterSelected] = useState(false);
 
-    const toggelFilter = () => {
+    const toggleFilter = () => {
         setfilterSelected(prevState  => !prevState);
     };
 
     return ( 
-        <button style={pillStyle} onClick={toggelFilter} tabIndex="0" onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') toggelFilter(); }}>
+        <button style={pillStyle} onClick={toggleFilter} tabIndex="0" onKeyPress={(e) => { if (e.key === 'Enter' || e.key === ' ') toggelFilter(); }}>
             {text}
         </button>
     );

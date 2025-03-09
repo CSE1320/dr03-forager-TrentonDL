@@ -6,21 +6,29 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
-    padding: 10px 0;
+    background-color: #579076;
+    padding: 1em 0;
     z-index: 100;
+    box-shadow: 0px -0.125em 0.3125em rgba(0, 0, 0, 0.1);
+    border-radius: 0.9375em 0.9375em 0 0;
   }
   
   .navItem {
-    font-size: 24px;
+    font-size: calc(2vw + 1em);
     cursor: pointer;
     flex: 1;
     text-align: center;
+    color: #f0f0f0;
   }
   
   .navItem:hover {
-    background-color: #f0f0f0;
-    border-radius: 10px;
+    background-color: #B0E0E6; /* Example valid hex color */
+    border-radius: 0.625em;
     transition: background-color 0.3s ease;
+  }
+
+  .active {
+    color: #B0E0E6;
+    transform: scale(1.2);
   }
   
