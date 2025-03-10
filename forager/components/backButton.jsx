@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import app from '@/server'; // Import the server if needed
 
 const BackButton = ({ onClick }) => {
     return (
         <div>
             <button onClick={onClick || (() => window.history.back())}>Back</button>
-            <img src="../public/icons/back_button.png" alt="Back Arrow" />
+            <img src="/icons/back_button.png" alt="Back Arrow" />
         </div>
     );  
 };

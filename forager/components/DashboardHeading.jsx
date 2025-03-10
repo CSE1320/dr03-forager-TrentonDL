@@ -16,7 +16,7 @@ const DashboardHeading = () => {
                 <h1 className="profile-letter text-white font-nunito text-[150%] font-normal leading-10">C</h1>
             </div>
             <img className="dashboard-bg absolute right-0 top-0 z-[-1]" 
-                src="../public/img/dashboard-bg.png"
+                src="/img/dashboard-bg.png"
                 alt="mushroom"/>
         </div>
     );

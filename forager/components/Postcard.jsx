@@ -12,13 +12,13 @@ const Postcard = ({ mushroom }) => {
                     {warning ? (
                         <img 
                             className="warning absolute left-1.5 top-[5px]" 
-                            src="..public/icons/icon_warning_red.svg"
+                            src="/icons/warning_icon.png"
                             alt="warning icon"/>
                     ) : null}
                 </div>
             </div>
             <div className="title mb-0.5 text-[#203B5F] text-center font-nunito text-[16px] font-semibold leading-normal">
-                <p className="mt-2 text-sm md:text-base lg:text-lg">
+                <p className="mt-2 text-sm md:text-base lg:text-lg truncate">
                     {name}
                 </p>
             </div>
