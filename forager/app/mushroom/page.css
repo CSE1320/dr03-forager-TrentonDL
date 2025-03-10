@@ -1,0 +1,61 @@
+.page {
+  padding: 20px;
+}
+
+.mushroom-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.mushroom-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.mushroom-details {
+  text-align: left;
+}
+
+.fast-facts {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.compare-button {
+  background-color: #579076;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.similar-matches {
+  margin-top: 20px;
+}
+
+.matches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.match-card {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+}
+
+.match-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

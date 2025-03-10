@@ -17,7 +17,7 @@ function getPillColor(pillSelected) {
 const pills = [
     { 
         text: "Favorite",
-        pillFilterType: 'tags',
+        pillFilterType: 'Tags',
         pillSelected: true,
         pillColor: function(){
             return getPillColor(this.pillSelected);
@@ -25,7 +25,7 @@ const pills = [
     },
     { 
         text: "Recent",
-        pillFilterType: 'tags',
+        pillFilterType: 'Tags',
         pillSelected: false,
         pillColor: function(){
             return getPillColor(this.pillSelected);
@@ -81,7 +81,31 @@ const pills = [
     },
     { 
         text: "Toxic",
-        pillFilterType: 'tags',
+        pillFilterType: 'Categories',
+        pillSelected: true,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    { 
+        text: "Medicinal",
+        pillFilterType: 'Categories',
+        pillSelected: true,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    { 
+        text: "Mythical",
+        pillFilterType: 'Categories',
+        pillSelected: true,
+        pillColor: function(){
+            return getPillColor(this.pillSelected);
+        }
+    },
+    { 
+        text: "Good for Broths",
+        pillFilterType: 'Categories',
         pillSelected: true,
         pillColor: function(){
             return getPillColor(this.pillSelected);
