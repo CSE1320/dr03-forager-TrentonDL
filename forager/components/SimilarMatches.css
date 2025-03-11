@@ -1,0 +1,52 @@
+.similar-matches {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.matches-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-card {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.post-card-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.post-card-percentage {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.post-card-percentage.toxic {
+  background-color: #f44336;
+}
+
+.toxic-warning {
+  margin-left: 5px;
+  color: #f44336;
+  font-size: 1.2em;
+}

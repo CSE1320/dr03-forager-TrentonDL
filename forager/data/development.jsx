@@ -119,11 +119,11 @@ const warningMessage = {
     message: "This is a toxic species, proceed with caution."
 };
 
-const createMushroom = (name, image, alt, warning) => ({
+const createMushroom = (name, image, alt, isToxic) => ({
     name,
     image: `/img/${image}.png`, // Corrected path
     alt, 
-    warning
+    isToxic,
 });
 
 const mushrooms = [
